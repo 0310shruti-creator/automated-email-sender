@@ -3,8 +3,8 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 # Gmail credentials
-EMAIL = "1234example@gmail.com"
-APP_PASSWORD = "your_app_password_here"
+EMAIL = "0310shruti@gmail.com"
+APP_PASSWORD = "xhvu seub ajsj zghq"
 
 # Read message from file
 with open("message.txt", "r") as file:

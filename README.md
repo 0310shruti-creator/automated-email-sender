@@ -31,3 +31,25 @@ This project is a Python-based Automated Email Sender that uses the SMTP protoco
 
 ```bash
 pip install -r requirements.txt
+
+
+
+## project work flow
+
+Start Program
+      ↓
+Read Recipient Emails from File
+      ↓
+Create Email Message
+      ↓
+Connect to Gmail SMTP Server
+      ↓
+Enable TLS Encryption
+      ↓
+Login Using Gmail App Password
+      ↓
+Send Email to Recipients
+      ↓
+Show Success Message
+      ↓
+Close Connection
