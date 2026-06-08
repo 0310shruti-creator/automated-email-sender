@@ -2,7 +2,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-# Gmail credentials
+# Gmail credentials (email and app password)
 EMAIL = "0310shruti@gmail.com"
 APP_PASSWORD = "xhvu seub ajsj zghq"
 
