@@ -6,15 +6,7 @@ from email.mime.multipart import MIMEMultipart
 EMAIL = "0310shruti@gmail.com"
 APP_PASSWORD = "xhvu seub ajsj zghq"
 
-# Read message from file
-with open("message.txt", "r") as file:
-    MESSAGE = file.read()
-
-# Read recipients from file
-with open("recipients.txt", "r") as file:
-    recipients = file.readlines()
-
-def send_emails():
+def send_emails(recipients, subject, message):
     try:
         # SMTP Server Setup
         server = smtplib.SMTP("smtp.gmail.com", 587)
@@ -32,7 +24,7 @@ def send_emails():
             msg["To"] = recipient
             msg["Subject"] = "Automated Email from Python"
 
-            msg.attach(MIMEText(MESSAGE, "plain"))
+            msg.attach(MIMEText(message, "plain"))
 
             server.sendmail(EMAIL, recipient, msg.as_string())
 
